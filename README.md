@@ -1,5 +1,7 @@
 # Example Plugin
 
+![Example Plugin](./logo.png)
+
 ## What's this project all about?
 
 It's the official [PEMU](https://github.com/hds536jhmk/ProcessorEmulator) Example Plugin
