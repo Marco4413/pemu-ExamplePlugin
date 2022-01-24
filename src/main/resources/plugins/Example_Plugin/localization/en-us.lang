@@ -1,0 +1,11 @@
+# _shortName MUST be the same as the file's name and MUST be specified
+"_shortName" = "en-us"
+"_longName"  = "English - US"
+
+"examplePlugin.active" = "{0} | Active"
+"examplePlugin.loaded"   = "Example Plugin Loaded ( For a total of {0} times )!"
+"examplePlugin.unloaded" = "Example Plugin Unloaded."
+"examplePlugin.menu.loaded._mnemonic" = 'L'
+"examplePlugin.menu.loaded._text"     = "Loaded {0} Times!"
+"examplePlugin.menu.verbose._mnemonic" = 'V'
+"examplePlugin.menu.verbose._text"     = "Verbose Load"
