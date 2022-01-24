@@ -2,6 +2,10 @@ plugins {
     id 'java'
 }
 
+// This is done to make sure that PEMU can read the Plugin classes properly
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
 group 'io.github.hds'
 version '1.0-RELEASE'
 
