@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'io.github.hds'
+version '1.0-RELEASE'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar { }
+
+dependencies {
+    compileOnly project(':PEMU')
+    // Using runtimeOnly to load PEMU when running the project on an IDE
+    runtimeOnly project(':PEMU')
+    // This is compileOnly because PEMU also uses it and Plugins can access it when loaded
+    compileOnly 'org.jetbrains:annotations:22.0.0'
+}

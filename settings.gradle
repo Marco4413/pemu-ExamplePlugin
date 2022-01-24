@@ -1,0 +1,5 @@
+include ':PEMU'
+project(':PEMU').projectDir = file 'libs/PEMU'
+
+rootProject.name = 'ExamplePlugin'
+

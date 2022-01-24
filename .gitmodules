@@ -1,0 +1,4 @@
+[submodule "libs/PEMU"]
+	path = libs/PEMU
+	url = https://github.com/hds536jhmk/ProcessorEmulator
+	branch = latest
