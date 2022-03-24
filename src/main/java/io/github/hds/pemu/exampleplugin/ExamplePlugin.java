@@ -40,8 +40,8 @@ public class ExamplePlugin extends AbstractPlugin implements ITranslatable, ICon
 
     private static ExamplePlugin instance;
     public static @NotNull ExamplePlugin getInstance() {
-        // This is something you may or may not need
-        if (instance == null) instance = new ExamplePlugin();
+        if (instance == null)
+            throw new NullPointerException("Trying to get a plugin which has not yet been registered.");
         return instance;
     }
 
@@ -63,6 +63,8 @@ public class ExamplePlugin extends AbstractPlugin implements ITranslatable, ICon
 
     @Override
     public @Nullable String onRegister() {
+        instance = this;
+
         // Adding Config and Translation Listeners
         ConfigManager.addConfigListener(this);
         TranslationManager.addTranslationListener(this);
