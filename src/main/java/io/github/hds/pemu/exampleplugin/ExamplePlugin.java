@@ -92,7 +92,7 @@ public class ExamplePlugin extends AbstractPlugin implements ITranslatable, ICon
         // Keeping track of the Plugin State
         isLoaded = true;
         // Adding the Plugin's menu to the Application's Menu Bar only if it's not headless
-        // The headless check should be used to not create a new ApplicationGUI Instance
+        // The headless check should be used otherwise Application#getGUI throws
         Application app = Application.getInstance();
         if (!app.isHeadless())
             app.getGUI().MENU_BAR.add(M_PLUGIN_MENU);
