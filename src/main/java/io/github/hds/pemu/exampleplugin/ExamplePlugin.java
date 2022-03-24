@@ -150,6 +150,10 @@ public class ExamplePlugin extends AbstractPlugin implements ITranslatable, ICon
     @Override
     public void updateTranslations(@NotNull Translation newTranslation) {
         // Translating Plugin
+        // NOTE: If you've translated your plugin for all languages available
+        //  with PEMU you can use this method instead:
+        //   PluginUtils.getPluginTranslation(this, newTranslation.getShortName())
+        //  The method above loads the same locale as the one of the new translation
         translation = PluginUtils.getPluginTranslation(this);
         translation.translateComponent("examplePlugin.menu.verbose", CB_TOGGLE_VERBOSE);
         translation.translateComponent("examplePlugin.menu.loaded", I_LOAD_TIMES, loadTimes);
