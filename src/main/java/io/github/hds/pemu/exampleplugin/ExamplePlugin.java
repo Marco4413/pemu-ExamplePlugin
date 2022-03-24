@@ -1,6 +1,6 @@
 package io.github.hds.pemu.exampleplugin;
 
-import io.github.hds.pemu.app.Application;
+import io.github.hds.pemu.application.Application;
 import io.github.hds.pemu.config.ConfigEvent;
 import io.github.hds.pemu.config.ConfigManager;
 import io.github.hds.pemu.config.IConfigurable;
@@ -91,8 +91,11 @@ public class ExamplePlugin extends AbstractPlugin implements ITranslatable, ICon
     public void onLoad() {
         // Keeping track of the Plugin State
         isLoaded = true;
-        // Adding the Plugin's menu to the Application's Menu Bar
-        Application.getInstance().MENU_BAR.add(M_PLUGIN_MENU);
+        // Adding the Plugin's menu to the Application's Menu Bar only if it's not headless
+        // The headless check should be used to not create a new ApplicationGUI Instance
+        Application app = Application.getInstance();
+        if (!app.isHeadless())
+            app.getGUI().MENU_BAR.add(M_PLUGIN_MENU);
 
         // +1 to Load Times and updating menu entry
         loadTimes++;
@@ -111,7 +114,9 @@ public class ExamplePlugin extends AbstractPlugin implements ITranslatable, ICon
         // Keeping track of the Plugin State
         isLoaded = false;
         // Removing the Plugin's menu to the Application's Menu Bar
-        Application.getInstance().MENU_BAR.remove(M_PLUGIN_MENU);
+        Application app = Application.getInstance();
+        if (!app.isHeadless())
+            app.getGUI().MENU_BAR.add(M_PLUGIN_MENU);
 
         if (verboseLoad) {
             Console.Debug.println(translation.getOrDefault("examplePlugin.unloaded"));
