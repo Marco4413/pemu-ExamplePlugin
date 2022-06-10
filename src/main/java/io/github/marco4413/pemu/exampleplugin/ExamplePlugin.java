@@ -1,22 +1,22 @@
-package io.github.hds.pemu.exampleplugin;
+package io.github.marco4413.pemu.exampleplugin;
 
-import io.github.hds.pemu.application.Application;
-import io.github.hds.pemu.config.ConfigEvent;
-import io.github.hds.pemu.config.ConfigManager;
-import io.github.hds.pemu.config.IConfigurable;
-import io.github.hds.pemu.console.Console;
-import io.github.hds.pemu.instructions.Instructions;
-import io.github.hds.pemu.localization.ITranslatable;
-import io.github.hds.pemu.localization.Translation;
-import io.github.hds.pemu.localization.TranslationManager;
-import io.github.hds.pemu.plugins.AbstractPlugin;
-import io.github.hds.pemu.plugins.Plugin;
-import io.github.hds.pemu.plugins.PluginUtils;
-import io.github.hds.pemu.processor.IDummyProcessor;
-import io.github.hds.pemu.processor.IProcessor;
-import io.github.hds.pemu.processor.Processor;
-import io.github.hds.pemu.processor.ProcessorConfig;
-import io.github.hds.pemu.utils.StringUtils;
+import io.github.marco4413.pemu.application.Application;
+import io.github.marco4413.pemu.config.ConfigEvent;
+import io.github.marco4413.pemu.config.ConfigManager;
+import io.github.marco4413.pemu.config.IConfigurable;
+import io.github.marco4413.pemu.console.Console;
+import io.github.marco4413.pemu.instructions.Instructions;
+import io.github.marco4413.pemu.localization.ITranslatable;
+import io.github.marco4413.pemu.localization.Translation;
+import io.github.marco4413.pemu.localization.TranslationManager;
+import io.github.marco4413.pemu.plugins.AbstractPlugin;
+import io.github.marco4413.pemu.plugins.Plugin;
+import io.github.marco4413.pemu.plugins.PluginUtils;
+import io.github.marco4413.pemu.processor.IDummyProcessor;
+import io.github.marco4413.pemu.processor.IProcessor;
+import io.github.marco4413.pemu.processor.Processor;
+import io.github.marco4413.pemu.processor.ProcessorConfig;
+import io.github.marco4413.pemu.utils.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -24,7 +24,7 @@ import javax.swing.*;
 
 @Plugin(
     // The Naming Convention for IDs is 'packages.to.plugin.class:PluginClassName'
-    id = "io.github.hds.pemu:ExamplePlugin",
+    id = "io.github.marco4413.pemu:ExamplePlugin",
     // This is the name of the Plugin, note that this is used by the PluginUtils class
     //  to search Plugin resources so don't use special characters here, only spaces or dashes
     name = "Example Plugin",

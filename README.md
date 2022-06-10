@@ -4,7 +4,7 @@
 
 ## What's this project all about?
 
-It's the official [PEMU](https://github.com/hds536jhmk/ProcessorEmulator) Example Plugin
+It's the official [PEMU](https://github.com/Marco4413/ProcessorEmulator) Example Plugin
 
 ## How to run:
 
@@ -15,15 +15,15 @@ Running on IntelliJ IDEA:
  1. Open the project and create a new **Application Run Config**:
     - Java Version: `1.8` (Adopt OpenJDK)
     - Class Path: `ExamplePlugin.main`
-    - Main Class: `io.github.hds.pemu.exampleplugin.Main`
+    - Main Class: `io.github.marco4413.pemu.exampleplugin.Main`
  2. Run the newly created config, the main file automatically opens PEMU with the Plugin registered.
 
 Running on PEMU:
  1. Download the Prebuilt Jar file in Releases or build it yourself using `gradlew build`.
- 2. Follow this guide to see where the plugins' folder is on your PC: [Plugins Guide](https://github.com/hds536jhmk/ProcessorEmulator/blob/master/plugins/README.md)
+ 2. Follow this guide to see where the plugins' folder is on your PC: [Plugins Guide](https://github.com/Marco4413/ProcessorEmulator/blob/master/plugins/README.md)
 
 ## Dependencies:
 
 There's only 2 dependencies:
- - [PEMU](https://github.com/hds536jhmk/ProcessorEmulator)
+ - [PEMU](https://github.com/Marco4413/ProcessorEmulator)
  - [JetBrains Annotations](https://github.com/JetBrains/java-annotations)

@@ -6,7 +6,7 @@ plugins {
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
-group 'io.github.hds'
+group 'io.github.marco4413'
 version '1.0-RELEASE'
 
 repositories {

@@ -7,7 +7,7 @@
 
 # ExamplePlugin
 
-Copyright (c) 2022 [hds536jhmk](https://github.com/hds536jhmk/pemu-ExamplePlugin)
+Copyright (c) 2022 [Marco4413](https://github.com/Marco4413/pemu-ExamplePlugin)
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -32,7 +32,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 # Processor Emulator
 
-Copyright (c) 2021 [hds536jhmk](https://github.com/hds536jhmk/ProcessorEmulator)
+Copyright (c) 2022 [Marco4413](https://github.com/Marco4413/ProcessorEmulator)
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
